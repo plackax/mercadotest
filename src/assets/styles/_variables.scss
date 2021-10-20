@@ -1,0 +1,34 @@
+$ml-maincolor: #fff159;
+$ml-secondcolor: #333;
+$ml-white: #FFF;
+$ml-separator: #e6e6e6;
+$body-background: #eeeeee;
+$ml-text-error: rgb(150, 60, 60);
+$ml-button-color: #3483FA;
+
+$header-height: 60px;
+$max-width-movil: 991px;
+$image-product-size: 680px;
+$image-product-thumb: 180px;
+$image-product-thumb-movil: 130px;
+
+@mixin centered {
+    margin: auto;
+    max-width: 1024px;
+}
+
+@mixin height100 {
+    height: 100%;
+}
+
+@mixin margindyn($side: 'bottom', $amount: 32) {
+    margin-#{$side}: #{$amount}px;
+}
+
+@mixin margin32($side: 'bottom') {
+    @include margindyn($side, 32);
+}
+
+@mixin margin16($side: 'bottom') {
+    @include margindyn($side, 16);
+}

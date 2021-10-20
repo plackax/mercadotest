@@ -1,0 +1,18 @@
+.breadcrumbs {
+    padding: 0 0 16px;
+    span {
+        font-size: 14px;
+        
+        & + span {
+            &::before {
+                content: ">";
+                font-family: Helvetica, sans-serif;
+                display: inline;
+                text-align: center;
+                padding: 0 10px;
+                color: #000;
+                opacity: 0.3;
+            }
+        }
+    }
+}

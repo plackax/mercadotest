@@ -1,0 +1,35 @@
+body {
+    color: $ml-secondcolor;
+}
+.content {
+    min-height: calc(100vh - #{$header-height});
+    background-color: $body-background;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &Container {
+        @include centered;
+        @include height100;
+        padding: 15px 0;
+    }
+}
+.whiteContent {
+    min-height: calc(100% - 30px);
+    background-color: $ml-white;
+    border-radius: 4px;
+}
+
+.textoInicio {
+    color: $ml-secondcolor;
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.centerContent {
+    display: flex;
+    justify-content: center;
+}
+
+.errorText {
+    color: $ml-text-error;
+}
